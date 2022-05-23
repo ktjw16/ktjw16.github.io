@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700;900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Noto Sans Mono', monospace;
+    margin: 0;
 }
 
 section {
@@ -18,11 +25,46 @@ section {
 .subheading {
     margin-top: 30px;
     margin-bottom: 30px;
+    display: inline-block;
+}
+
+.typed h2 {
+    font-weight: 400;
+    overflow: hidden;
+    border-right: 3px solid black;
+    white-space: nowrap;
+    animation:
+        typing 2.3s steps(50, end) forwards,
+        blink .6s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar ul li a {
+    transition: all 0.2s ease;
+}
+
+.navbar ul li a:hover{
+    color: gray;
 }
 
 h1 {
@@ -69,6 +111,7 @@ a {
     line-height: 50px;
     /* padding: 1px 0; */
     font-size: 25px;
+    transition: all 0.2s ease;
 }
 
 .button:hover, .button:active {
@@ -112,6 +155,17 @@ footer {
     justify-content: space-around;
     width: 200px;
     margin: 40px;
+}
+
+.icon {
+    transition: all 0.2s ease;
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+.icon:hover {
+    fill: gray;
 }
 
 @media only screen and (max-width: 100px) {
