@@ -1,16 +1,25 @@
-
-document.querySelector(".toggle").addEventListener("click", () => {
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
     document.querySelector(".sun-logo").classList.toggle("animate-sun");
     document.querySelector(".moon-logo").classList.toggle("animate-moon");
-    document.querySelector("body").classList.toggle("dark-mode")
+}
 
-})
+const currentTheme = localStorage.getItem("theme");
+const darkOS = window.matchMedia("(prefers-color-scheme: dark)").matches;
+if ((darkOS && currentTheme == null) || currentTheme == "dark") {
+    toggleDarkMode();
+}
 
-// function darkMode() {
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-//     document.querySelector("")
-// }
+const toggle = document.querySelector(".toggle");
+toggle.addEventListener("click", () => {
+    toggleDarkMode();
+    if (document.body.classList.contains("dark-mode")) {
+        var theme = "dark";
+    } else {
+        var theme = "light";
+    }
+    localStorage.setItem("theme", theme);
+});
 
 // document.addEventListener('DOMContentLoaded', function (event) {
 //     // array with texts to type in typewriter
@@ -112,5 +121,3 @@ window.onload = function () {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 };
-
-
