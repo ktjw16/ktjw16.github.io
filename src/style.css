@@ -204,8 +204,14 @@ li {
 }
 
 a {
+    /* text-decoration: none; */
+    color: blue;
+    transition: none;
+}
+
+a:hover {
     text-decoration: none;
-    color: black;
+    /* color: gray; */
 }
 
 .header-area {
@@ -217,6 +223,10 @@ a {
 
 .header-text {
     margin-left: 60px;
+}
+
+.header a {
+    text-decoration: none;
 }
 
 .button {
@@ -247,6 +257,10 @@ a {
     color: var(--fontColor);
 }
 
+.experience {
+    background-color: brown;
+}
+
 h2 {
     font-size: 30px;
     /* color: var(--fontColor); */
@@ -254,7 +268,7 @@ h2 {
 
 p {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    /* color: var(--fontColor); */
+    color: var(--fontColor);
 }
 
 footer {
@@ -263,6 +277,10 @@ footer {
     color: white;
     padding-top: 50px;
     padding-left: 50px;
+}
+
+footer p {
+    color: white;
 }
 
 .footer-links {
