@@ -6,7 +6,10 @@ html {
 
 body {
     font-family: 'Noto Sans Mono', monospace;
-    margin: 0;}
+    margin: 0;
+    overflow-x:hidden;
+    overflow-y: scroll;
+}
 
 * {
     transition: background-color .3s ease, color .3s ease, border-color .3s ease;
@@ -20,7 +23,7 @@ body {
     --navHoverColor: gray;
     --headerBg: white;
     --typeCursor: black;
-    --sectionBg: #64CCC5;
+    --sectionBg: #7197a0;
     --buttonBg: white;
     --buttonBorder: black;
     --buttonText: black;
@@ -28,9 +31,10 @@ body {
     --buttonHoverText: white;
     --toggleBg: rgb(235, 235, 235);
     --toggleHoverBg: rgb(215, 215, 215);
-    --expBg: #DAFFFB;
-    --linkColor: #176B87;
-    --linkHoverColor: #04364A;
+    --expBg: #92b3ba;
+    --linkColor: #04364A;
+    --linkHoverColor: #176B87;
+    --terminalColor: #04364A;
 }
 
 .dark-mode {
@@ -41,7 +45,7 @@ body {
     --navHoverColor: gray;
     --headerBg: black;
     --typeCursor: white;
-    --sectionBg: #04364A;
+    --sectionBg: #244f58;
     --buttonBg: black;
     --buttonBorder: white;
     --buttonText: white;
@@ -49,9 +53,10 @@ body {
     --buttonHoverText: black;
     --toggleBg: rgb(60, 60, 60);
     --toggleHoverBg: rgb(80, 80, 80);
-    --expBg: #176B87;
-    --linkColor: #64CCC5;
-    --linkHoverColor: #DAFFFB;
+    --expBg: #3c6770;
+    --linkColor: #92b3ba;
+    --linkHoverColor: #7197a0;
+    --terminalColor: #7197a0;
 }
 
 section {
@@ -76,7 +81,7 @@ section {
 .typed h2 {
     font-weight: 400;
     overflow: hidden;
-    border-right: 4px solid black;
+    border-right: 4px solid var(--typeCursor);
     white-space: nowrap;
     animation:
         typing 7s steps(35, end) infinite,
@@ -95,6 +100,7 @@ section {
 @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: var(--typeCursor); }
+    from, to { color: var(--fontColor)}
 }
 
 nav {
@@ -134,13 +140,46 @@ nav {
     display: flex;
     list-style-type: none;
     justify-content: space-around;
-    width: 430px;
-    justify-content: space-around;
+    width: 500px;
     font-size: 15px;
     margin: 0px;
     padding-left: 0;
     padding-right: 10px;
 }
+
+.navbar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar li:not(:first-child) { display: none;}
+    .navbar .icon {
+        right: 0;
+        top: 8px;
+        display: block;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: fixed;
+    }
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 8px;
+    }
+    .navbar.responsive ul {
+        display: block;
+        padding-top: 30px;
+    }
+    .navbar.responsive li {
+        margin: 5px;
+        display: block;
+        right: 0;
+    }
+  }
 
 .navbar ul li a {
     color: var(--navColor);
@@ -289,8 +328,6 @@ p {
     color: var(--fontColor);
 }
 
-
-
 footer {
     height: 200px;
     background-color: black;
@@ -301,6 +338,7 @@ footer {
 
 footer p {
     color: white;
+    text-align: center;
 }
 
 .footer-links {
@@ -328,4 +366,8 @@ footer p {
 
 @media only screen and (max-width: 100px) {
     
+}
+
+.terminal {
+    color: var(--terminalColor);
 }

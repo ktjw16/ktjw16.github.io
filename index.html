@@ -4,18 +4,25 @@
 <head>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://kit.fontawesome.com/cdf5b9b306.js" crossorigin="anonymous"></script>
-    <title>katie</title>
+    <title>katie's portfolio</title>
     <meta charset="UTF-8" />
 </head>
 
 <body class="light-mode">
     <section class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="navigation">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <div class="home"><a href="#">KW</a></div>
             <ul>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="reactiveNavBar()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
                 <li><a href="#about">about me</a></li>
                 <li><a href="#experience">experience</a></li>
                 <li><a href="#projects">projects</a></li>
+                <li><a href="#files">files</a></li>
                 <li><a href="#contact">contact</a></li>
                 <li>
                     <div class="toggle">
@@ -28,6 +35,7 @@
                     </div>
                 </li>
             </ul>
+            
         </nav>
         <div class="header-area">
             <div class="header-text">
@@ -46,9 +54,9 @@
 
     <section class="subsection about" id="about">
         <div class="about">
-            <h2>get to know me</h2>
+            <h2><span class="terminal">portfolio:~$</span> get to know me</h2>
             <p>
-                My name is Katie Wolf. I'm a junior at Iowa State University majoring in Computer Engineering, with
+                Hi, my name is Katie Wolf. I'm a junior at Iowa State University majoring in Computer Engineering, with
                 minors in Cybersecurity, Mathematics, and Chinese. I plan to graduate in December of 2024.</p>
             <!-- <p>
                 When I'm not diligently studying, you can probably find me sleeping or listening to new music, sometimes
@@ -60,7 +68,7 @@
 
     <section class="subsection experience" id="experience">
         <div class="experience">
-            <h2>experience</h2>
+            <h2><span class="terminal">portfolio:~$</span> experience</h2>
             <h3>Undergraduate Teaching Assistant at Iowa State University <span style="float:right">August 2023 - Present</span></h3>
             <ul>
                 <li>Facilitate weekly lab sessions and office hours for Computer Organization class with over 100 students</li>
@@ -145,7 +153,7 @@
 
     <section class="subsection projects" id="projects">
         <div class="projects">
-            <h2>projects</h2>
+            <h2><span class="terminal">portfolio:~$</span> projects</h2>
             <h3>Synthesized VHDL-Based MIPS Processor</h3>
             <p>
                 In this project, we created a MIPS processor using VHDL, a hardware description programming language.
@@ -167,7 +175,7 @@
 
     <section class="subsection files" id="files">
         <div class="files">
-            <h2>files</h2>
+            <h2><span class="terminal">portfolio:~$</span> files</h2>
             <h3>Ethics Essay</h3>
             <a href="./src/assets/ethics_essay.pdf" target="_blank">Read it here!</a>
         </div>
