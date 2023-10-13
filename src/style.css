@@ -20,7 +20,7 @@ body {
     --navHoverColor: gray;
     --headerBg: white;
     --typeCursor: black;
-    --sectionBg: burlywood;
+    --sectionBg: #64CCC5;
     --buttonBg: white;
     --buttonBorder: black;
     --buttonText: black;
@@ -28,6 +28,9 @@ body {
     --buttonHoverText: white;
     --toggleBg: rgb(235, 235, 235);
     --toggleHoverBg: rgb(215, 215, 215);
+    --expBg: #DAFFFB;
+    --linkColor: #176B87;
+    --linkHoverColor: #04364A;
 }
 
 .dark-mode {
@@ -38,7 +41,7 @@ body {
     --navHoverColor: gray;
     --headerBg: black;
     --typeCursor: white;
-    --sectionBg: gray;
+    --sectionBg: #04364A;
     --buttonBg: black;
     --buttonBorder: white;
     --buttonText: white;
@@ -46,6 +49,9 @@ body {
     --buttonHoverText: black;
     --toggleBg: rgb(60, 60, 60);
     --toggleHoverBg: rgb(80, 80, 80);
+    --expBg: #176B87;
+    --linkColor: #64CCC5;
+    --linkHoverColor: #DAFFFB;
 }
 
 section {
@@ -204,15 +210,19 @@ li {
 }
 
 a {
-    /* text-decoration: none; */
-    color: blue;
-    transition: none;
+    text-decoration: none;
+    color: var(--linkColor);
 }
 
 a:hover {
     text-decoration: none;
-    /* color: gray; */
+    transition: all .3s ease-out;
+    color: var(--linkHoverColor);
 }
+
+/* a:visited {
+    color: var(--linkColor);
+} */
 
 .header-area {
     display: flex;
@@ -257,8 +267,12 @@ a:hover {
     color: var(--fontColor);
 }
 
-.experience {
-    background-color: brown;
+.experience, .files {
+    background-color: var(--expBg);
+}
+
+.experience ul li {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 h2 {
@@ -266,16 +280,22 @@ h2 {
     /* color: var(--fontColor); */
 }
 
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 p {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--fontColor);
 }
 
+
+
 footer {
     height: 200px;
     background-color: black;
     color: white;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 50px;
 }
 

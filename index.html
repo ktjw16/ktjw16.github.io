@@ -11,7 +11,7 @@
 <body class="light-mode">
     <section class="header">
         <nav class="navbar">
-            <div class="home"><a href="#">k</a></div>
+            <div class="home"><a href="#">KW</a></div>
             <ul>
                 <li><a href="#about">about me</a></li>
                 <li><a href="#experience">experience</a></li>
@@ -49,19 +49,43 @@
             <h2>get to know me</h2>
             <p>
                 My name is Katie Wolf. I'm a junior at Iowa State University majoring in Computer Engineering, with
-                minors in Mathematics and Chinese. I expect to graduate December 2024.</p>
-            <p>
+                minors in Cybersecurity, Mathematics, and Chinese. I plan to graduate in December of 2024.</p>
+            <!-- <p>
                 When I'm not diligently studying, you can probably find me sleeping or listening to new music, sometimes
                 both at the same time. I like to claim some of my hobbies are photography, playing guitar, and reading,
                 although the actual amount of time I spend doing such activites is questionable at best.
-            </p>
+            </p> -->
         </div>
     </section>
 
     <section class="subsection experience" id="experience">
         <div class="experience">
             <h2>experience</h2>
-            <h4>Relavent Coursework</h4>
+            <h3>Undergraduate Teaching Assistant at Iowa State University <span style="float:right">August 2023 - Present</span></h3>
+            <ul>
+                <li>Facilitate weekly lab sessions and office hours for Computer Organization class with over 100 students</li>
+                <li>Demonstrate best coding practices in VHDL to design and implement digital components and datapaths</li>
+                <li>Evaluate students’ hardware design submissions and analyze simulated waveforms in ModelSim for correctness</li>
+            </ul>
+            <h3>Software Engineer Intern at Oracle <span style="float:right">May 2023 - August 2023</span></h3>
+            <ul>
+                <li>Developed Python scripts to achieve full codebase coverage for static code analysis on two product platforms</li>
+                <li>Designed utility scripts for parsing and analyzing output reports, resulting in a 95% reduction in processing time</li>
+                <li>Integrated automation scripts into the nightly build process, streamlining workflows for over 150 engineers</li>
+            </ul>
+            <h3>Software Engineering Co-op at Collins Aerospace <span style="float:right">May 2022 - December 2022</span></h3>
+            <ul>
+                <li>Developed and executed software verification tests on flight deck display systems for commercial Boeing aircraft</li>
+                <li>Analyzed and updated application code and test procedures to ensure compliance with customer requirements</li>
+                <li>Conducted over 50 peer reviews to assess safety-critical software in accordance with DO-178B standards</li>
+            </ul>
+            <h3>Software Engineer Intern at Collins Aerospace <span style="float:right">May 2021 - August 2021</span></h3>
+            <ul>
+                <li>Integrated Coverity code analysis tool into the Avionics Platform Software department’s development workflow</li>
+                <li>Implemented a CI/CD Bamboo pipeline to streamline the code analysis process, utilizing Docker containers</li>
+                <li>Developed and documented thorough instructions and best practices for the different tools</li>
+            </ul>
+            <!-- <h4>Relavent Coursework</h4>
             <div class="table-wrapper">
                 <table>
                     <thead>
@@ -114,7 +138,7 @@
                             <td><a href="https://catalog.iastate.edu/azcourses/">ISU Course Catolog</a></td>
                         </tr>
                     </tfoot>
-                </table>
+                </table> -->
             </div>
         </div>
     </section>
@@ -122,6 +146,30 @@
     <section class="subsection projects" id="projects">
         <div class="projects">
             <h2>projects</h2>
+            <h3>Synthesized VHDL-Based MIPS Processor</h3>
+            <p>
+                In this project, we created a MIPS processor using VHDL, a hardware description programming language.
+                Our proecessor was able to execute 32 MIPS assembly instructions, and we built 2 main versions of this processor:
+                one that performs each instruction in a single clock cycle, and a 5-stage pipeline processor that can handle
+                multiple instructions simultaneously in one clock cycle. The main goal of this project was to create a functional processor
+                that works as fast and efficiently as possible, and our processor was able to attain a frequency of 49 MHz.
+            </p>
+            <h3>Social Media and Music Sharing Android App</h3>
+            <p>
+                In this project, I developed a dynamic backend system using Spring Boot for a music-sharing social media platform.
+                The backend was integrated with a SQL database to store and manage user data, music-related information, and
+                social interactions. To enhance the user experience, I designed and implemented RESTful APIs that allowed for easy and efficient
+                access to data. I also incorporated a real-time direct messaging feature using WebSockets, enabling users to communicate
+                instantly and interact with other users.
+            </p>
+        </div>
+    </section>
+
+    <section class="subsection files" id="files">
+        <div class="files">
+            <h2>files</h2>
+            <h3>Ethics Essay</h3>
+            <a href="./src/assets/ethics_essay.pdf" target="_blank">Read it here!</a>
         </div>
     </section>
 
@@ -150,7 +198,7 @@
             </div>
         </div>
         <div class="footer-text">
-            <p>Katie Wolf, ktjw16@gmail.com</p>
+            <p>This site is a work in progress!</p>
         </div>
     </footer>
 
