@@ -1,216 +1,254 @@
+<!-- https://github.com/ndoherty-xyz/unemployables-portfolio-template -->
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
 
-<head>
-    <link rel="stylesheet" href="src/style.css" />
-    <script src="https://kit.fontawesome.com/cdf5b9b306.js" crossorigin="anonymous"></script>
-    <title>katie's portfolio</title>
-    <meta charset="UTF-8" />
-</head>
+    <!-- 
+      TODO
 
-<body class="light-mode">
-    <section class="header">
-        <nav class="navbar" id="navigation">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <div class="home"><a href="#">KW</a></div>
-            <ul>
-                <li>
-                    <a href="javascript:void(0);" class="icon" onclick="reactiveNavBar()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
-                <li><a href="#about">about me</a></li>
-                <li><a href="#experience">experience</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#files">files</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li>
-                    <div class="toggle">
-                        <div class="sun sun-logo">
-                            <i class="fas fa-sun"></i>
-                        </div>
-                        <div class="moon moon-logo">
-                            <i class="fas fa-moon"></i>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            
-        </nav>
-        <div class="header-area">
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/avatar.png" />
+		<title>katie wolf</title>
+    <meta name="description" content="Katie Wolf's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">katie wolf</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:ktjw16@gmail.com">
+          <span class="button-text">contact me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/avatar.png" class="portfolio-header-image">
+          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+            <!-- <span class="image-caption">Unemployables #1311</span> -->
+          </a>
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
             <div class="header-text">
-                <h1>hi 👋, i'm katie 👩🏻‍💻</h1>
-                <div class="subheading">
-                    <div class="typed">
-                        <h2>student, creator, aspiring engineer</h2>
-                    </div>
-                </div>
-                <a href="#about">
-                    <div class="button">more</div>
-                </a>
+              <span class="main-title">Hi, I'm Katie.</span>
+              <div class="body-text">I’m an undergrad student in Computer Engineer.</div>
             </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">learn more</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
         </div>
-    </section>
+      </div>
 
-    <section class="subsection about" id="about">
-        <div class="about">
-            <h2><span class="terminal">portfolio:~$</span> get to know me</h2>
-            <p>
-                Hi, my name is Katie Wolf. I'm a junior at Iowa State University majoring in Computer Engineering, with
-                minors in Cybersecurity, Mathematics, and Chinese. I plan to graduate in December of 2024.</p>
-            <!-- <p>
-                When I'm not diligently studying, you can probably find me sleeping or listening to new music, sometimes
-                both at the same time. I like to claim some of my hobbies are photography, playing guitar, and reading,
-                although the actual amount of time I spend doing such activites is questionable at best.
-            </p> -->
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">about me</span>
+        <div class="about-section-content">
+          <div class="body-text">
+            My name is Katie Wolf, and I'm a fourth-year Computer Engineering student at Iowa State University.
+            I'm also minoring in Cybersecurity, Mathematics, and Chinese.
+            I'm most interested in the intersection between hardware and software, and through my classes and internships,
+            I've gained experience in software engineering, embedded systems, digital design, and security.
+            After graduating in December 2024, I plan to pursue a full-time role in software or firmware engineering.
+          </div>
+          <div class="body-text">
+            In my freetime, I enjoy taking photos, both digital and film, and discovering new music.
+            My favorite genres are alternative and indie.
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section class="subsection experience" id="experience">
-        <div class="experience">
-            <h2><span class="terminal">portfolio:~$</span> experience</h2>
-            <h3>Undergraduate Teaching Assistant at Iowa State University <span style="float:right">August 2023 - Present</span></h3>
-            <ul>
-                <li>Facilitate weekly lab sessions and office hours for Computer Organization class with over 100 students</li>
-                <li>Demonstrate best coding practices in VHDL to design and implement digital components and datapaths</li>
-                <li>Evaluate students’ hardware design submissions and analyze simulated waveforms in ModelSim for correctness</li>
-            </ul>
-            <h3>Software Engineer Intern at Oracle <span style="float:right">May 2023 - August 2023</span></h3>
-            <ul>
-                <li>Developed Python scripts to achieve full codebase coverage for static code analysis on two product platforms</li>
-                <li>Designed utility scripts for parsing and analyzing output reports, resulting in a 95% reduction in processing time</li>
-                <li>Integrated automation scripts into the nightly build process, streamlining workflows for over 150 engineers</li>
-            </ul>
-            <h3>Software Engineering Co-op at Collins Aerospace <span style="float:right">May 2022 - December 2022</span></h3>
-            <ul>
-                <li>Developed and executed software verification tests on flight deck display systems for commercial Boeing aircraft</li>
-                <li>Analyzed and updated application code and test procedures to ensure compliance with customer requirements</li>
-                <li>Conducted over 50 peer reviews to assess safety-critical software in accordance with DO-178B standards</li>
-            </ul>
-            <h3>Software Engineer Intern at Collins Aerospace <span style="float:right">May 2021 - August 2021</span></h3>
-            <ul>
-                <li>Integrated Coverity code analysis tool into the Avionics Platform Software department’s development workflow</li>
-                <li>Implemented a CI/CD Bamboo pipeline to streamline the code analysis process, utilizing Docker containers</li>
-                <li>Developed and documented thorough instructions and best practices for the different tools</li>
-            </ul>
-            <!-- <h4>Relavent Coursework</h4>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Course</th>
-                            <th>Description</th>
-                            <th>My Grade</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>CPR E 185</td>
-                            <td>Introduction to Computer Engineering and Problem Solving I</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>COM S 227</td>
-                            <td>Object-Oriented Programming</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>COM S 228</td>
-                            <td>Introduction to Data Structures</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>CPR E 281</td>
-                            <td>Digital Logic</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>CPR E 288</td>
-                            <td>Embedded Systems I: Introduction</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>COM S 309</td>
-                            <td>Software Development Practices</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>CPR E 310</td>
-                            <td>Theoretical Foundations of Computer Engineering</td>
-                            <td>A</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td><a href="https://catalog.iastate.edu/azcourses/">ISU Course Catolog</a></td>
-                        </tr>
-                    </tfoot>
-                </table> -->
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">my projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-        </div>
-    </section>
 
-    <section class="subsection projects" id="projects">
-        <div class="projects">
-            <h2><span class="terminal">portfolio:~$</span> projects</h2>
-            <h3>Synthesized VHDL-Based MIPS Processor</h3>
-            <p>
-                In this project, we created a MIPS processor using VHDL, a hardware description programming language.
-                Our proecessor was able to execute 32 MIPS assembly instructions, and we built 2 main versions of this processor:
-                one that performs each instruction in a single clock cycle, and a 5-stage pipeline processor that can handle
-                multiple instructions simultaneously in one clock cycle. The main goal of this project was to create a functional processor
-                that works as fast and efficiently as possible, and our processor was able to attain a frequency of 49 MHz.
-            </p>
-            <h3>Social Media and Music Sharing Android App</h3>
-            <p>
-                In this project, I developed a dynamic backend system using Spring Boot for a music-sharing social media platform.
-                The backend was integrated with a SQL database to store and manage user data, music-related information, and
-                social interactions. To enhance the user experience, I designed and implemented RESTful APIs that allowed for easy and efficient
-                access to data. I also incorporated a real-time direct messaging feature using WebSockets, enabling users to communicate
-                instantly and interact with other users.
-            </p>
-        </div>
-    </section>
-
-    <section class="subsection files" id="files">
-        <div class="files">
-            <h2><span class="terminal">portfolio:~$</span> files</h2>
-            <h3>Ethics Essay</h3>
-            <a href="./src/assets/ethics_essay.pdf" target="_blank">Read it here!</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-links" id="contact">
-            <h2>contact me</h2>
-            <div class="socials">
-                <a href="https://github.com/ktjw16" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                        <path
-                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/katiejwolf/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                        <path
-                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                </a>
-                <a href="mailto:ktjw16@gmail.com" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon">
-                        <path
-                            d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z" />
-                    </svg>
-                </a>
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/chipfab.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./projects/asic.html" target="_self">Senior Design</a>
+              </div>
+              <div class="body-text project-card-text">Designing a chip framework that supports and connects smaller ASIC projects.</div>
             </div>
-        </div>
-        <div class="footer-text">
-            <p>This site is a work in progress!</p>
-        </div>
-    </footer>
+            <!-- <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">read more</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
 
-    <script src="src/app.js"></script>
-</body>
+          <div class="project-card">
+            <img src="./assets/images/zedboard.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./projects/zedboard.html" target="_self">ZedBoard FPGA Projects</a>
+              </div>
+              <div class="body-text project-card-text">Created and synthesized various projects on the ZedBoard and Xilinx Zynq FPGA.</div>
+            </div>
+            <!-- <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
 
+          <div class="project-card">
+            <img src="./assets/images/mips_proc.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./projects/mips.html" target="_self">MIPS Processor</a>
+              </div>
+              <div class="body-text project-card-text">Created a functional MIPS processor in VHDL that supports 32 instructions.</div>
+            </div>
+            <!-- <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/songshare_cover.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./projects/songshare.html" target="_self">SongShare</a>
+              </div>
+              <div class="body-text project-card-text">Developed a backend system for a music-sharing social media platform.</div>
+            </div>
+            <!-- <a class="button" href="./projects/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/roomba.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./projects/roomba.html" target="_self">Roomba Control</a>
+              </div>
+              <div class="body-text project-card-text">Programmed a microcontroller in C to remotely control a Roomba.</div>
+            </div>
+            <!-- <a class="button" href="./projects/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div id="about-section">
+        <span class="subheader-text">documents</span>
+        <div class="about-section-content">
+          <div class="body-text">
+            <a href="./assets/files/Katie_Wolf_Resume.pdf" target="_blank">Resume</a>
+            <br><br>
+            <a href="./assets/files/ethics_essay.pdf" target="_blank">Cumulative Reflection</a>
+            <br><br>
+            <a href="./assets/files/ethics_essay.pdf" target="_blank">General Education Reflection</a>
+            <br><br>
+            <a href="./assets/files/ethics_essay.pdf" target="_blank">Ethics Reflection</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/katiejwolf/">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://github.com/ktjw16">
+        <image src="./assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:ktjw16@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
 </html>
