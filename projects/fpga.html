@@ -24,7 +24,7 @@
 
       This should be the same across all pages.
      -->
-     <link rel="icon" href="./assets/images/avatar.png" />
+     <link rel="icon" href="../assets/images/avatar.png" />
 		<title>katie wolf</title>
     <meta name="description" content="Katie Wolf's Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -70,7 +70,7 @@
           -->
         <div class="main-title">ZedBoard FPGA Projects</div>
         <div class="body-text">Created and synthesized various projects on the ZedBoard and Xilinx Zynq FPGA.</div>
-        <image class="project-header-image" src="../assets/images/desktop.jpeg">
+        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -81,17 +81,22 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Details / Background</div>
+        <div class="subheader-text">background</div>
         <div class="project-details-content">
-          <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique risus nec feugiat in fermentum. Sed id semper risus in hendrerit gravida. Placerat duis ultricies lacus sed. Id neque aliquam vestibulum morbi blandit cursus risus. Elit pellentesque habitant morbi tristique senectus et netus et. Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium lectus quam id leo. Vitae congue mauris rhoncus aenean vel elit.</div>
-          <div class="body-text">Vitae justo eget magna fermentum. Imperdiet nulla malesuada pellentesque elit eget gravida. Aliquet nec ullamcorper sit amet. Aliquet sagittis id consectetur purus. Ac tortor dignissim convallis aenean. Enim neque volutpat ac tincidunt vitae. Lobortis feugiat vivamus at augue. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Viverra orci sagittis eu volutpat. Massa tincidunt nunc pulvinar sapien et ligula. Donec enim diam vulputate ut.</div>
+          <div class="body-text">
+            As part of Iowa State's CPRE 4880 course, Embedded Systems Design, we completed various projects using the
+            ZedBoard, a development kit that uses the AMD Xilinx Zynq-7000 chip. These projects ranged from implementing
+            a Nintendo Entertainment System emulation to remotely controlling a quadcopter drone. We designed the 
+            hardware components of each project using the Vivado Design Suite, and we wrote embedded application code in
+            C using Vitis.
+          </div>
         </div>
       </div>
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
         <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
+        <!-- <div class="subheader-text">gallery</div> -->
         <div class="project-gallery-content">
             <!-- 
               TODO
@@ -117,16 +122,16 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/nes.jpg" class="gallery-image">
+              <span class="image-caption">MP-0: NES Emulation</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/quadcopter.jpg" class="gallery-image">
+              <span class="image-caption">MP-1: Quad UAV Interfacing</span>
             </div>
             <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/fpga_camera.jpg" class="gallery-image">
+              <span class="image-caption">MP-2: Digital Camera</span>
             </div>
         </div>
       </div>

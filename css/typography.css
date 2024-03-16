@@ -28,6 +28,13 @@ a:hover {
 .image-caption {
   font-size: 14px;
   font-weight: 500;
+  text-align: left;
+}
+
+.image-caption-center {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .main-title {
