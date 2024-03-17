@@ -2,22 +2,33 @@ window.addEventListener('DOMContentLoaded', function() {
     const rows = document.querySelectorAll('#photo-grid .row');
   
     rows.forEach(row => {
+        let imagesLoaded = 0; // counter for loaded images
         const images = row.querySelectorAll('img');
+        
+        // initially hide entire row
+        row.classList.add('hidden');
+        
         images.forEach(img => {
-            // initially hide images
-            img.classList.add('hidden');
             if (img.complete && img.naturalHeight !== 0) {
+                imagesLoaded++;
                 resizeImage(img);
-                // show image if already loaded
-                img.classList.remove('hidden');
             } else {
                 img.addEventListener('load', () => {
                     resizeImage(img);
-                    // show image after it has loaded
-                    img.classList.remove('hidden');
+                    imagesLoaded++;
+                    // Check if all images in the row are loaded
+                    if (imagesLoaded === images.length) {
+                        // Show row if all images are loaded
+                        row.classList.remove('hidden');
+                    }
                 });
             }
         });
+        
+        // show row if all images are loaded
+        if (imagesLoaded === images.length) {
+            row.classList.remove('hidden');
+        }
     });
 
     function resizeImage(img) {
