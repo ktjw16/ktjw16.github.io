@@ -10,7 +10,7 @@
 
 .row img {
     width: 20%;
-    height: fit-content;
+    height: auto;
     margin: 8px;
     background-color: white;
 }
