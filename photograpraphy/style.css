@@ -9,8 +9,10 @@
 }
 
 .row img {
-    height: auto;
+    width: 20%;
+    height: fit-content;
     margin: 8px;
+    background-color: white;
 }
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */

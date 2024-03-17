@@ -19,6 +19,7 @@ window.addEventListener('DOMContentLoaded', function() {
         let totalAspectRatio = 0;
         const images = row.querySelectorAll('img');
     
+        // calculate total aspect ratio of all images in the row
         images.forEach(image => {
             if (image.complete) {
                 const aspectRatio = image.naturalWidth / image.naturalHeight;
@@ -26,11 +27,13 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         });
     
+        // set width of each image based on its aspect ratio
         images.forEach(image => {
             if (image.complete) {
                 const aspectRatio = image.naturalWidth / image.naturalHeight;
                 const percentageWidth = (aspectRatio / totalAspectRatio) * 100;
-                image.style.width = `calc(${percentageWidth}% - 16px)`; // Adjust based on margins
+                image.style.width = `calc(${percentageWidth}% - 16px)`; // adjust based on margins
+                image.style.backgroundColor = "transparent";
             }
         });
     }
