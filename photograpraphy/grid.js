@@ -4,11 +4,17 @@ window.addEventListener('DOMContentLoaded', function() {
     rows.forEach(row => {
         const images = row.querySelectorAll('img');
         images.forEach(img => {
-            if (img.complete) {
+            // initially hide images
+            img.classList.add('hidden');
+            if (img.complete && img.naturalHeight !== 0) {
                 resizeImage(img);
+                // show image if already loaded
+                img.classList.remove('hidden');
             } else {
                 img.addEventListener('load', () => {
                     resizeImage(img);
+                    // show image after it has loaded
+                    img.classList.remove('hidden');
                 });
             }
         });
@@ -21,7 +27,7 @@ window.addEventListener('DOMContentLoaded', function() {
     
         // calculate total aspect ratio of all images in the row
         images.forEach(image => {
-            if (image.complete) {
+            if (image.complete && image.naturalHeight !== 0) {
                 const aspectRatio = image.naturalWidth / image.naturalHeight;
                 totalAspectRatio += aspectRatio;
             }
@@ -29,11 +35,10 @@ window.addEventListener('DOMContentLoaded', function() {
     
         // set width of each image based on its aspect ratio
         images.forEach(image => {
-            if (image.complete) {
+            if (image.complete && image.naturalHeight !== 0) {
                 const aspectRatio = image.naturalWidth / image.naturalHeight;
                 const percentageWidth = (aspectRatio / totalAspectRatio) * 100;
                 image.style.width = `calc(${percentageWidth}% - 16px)`; // adjust based on margins
-                image.style.backgroundColor = "transparent";
             }
         });
     }
