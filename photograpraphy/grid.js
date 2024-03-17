@@ -16,9 +16,9 @@ window.addEventListener('DOMContentLoaded', function() {
                 img.addEventListener('load', () => {
                     resizeImage(img);
                     imagesLoaded++;
-                    // Check if all images in the row are loaded
+                    // check if all images in the row are loaded
                     if (imagesLoaded === images.length) {
-                        // Show row if all images are loaded
+                        // show row if all images are loaded
                         row.classList.remove('hidden');
                     }
                 });
