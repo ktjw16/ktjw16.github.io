@@ -45,4 +45,8 @@
     #photo-grid {
       margin: 70px 10px;
     }
+
+    .row img {
+      margin: 6px;
+    }
 }

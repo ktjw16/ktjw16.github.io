@@ -7,50 +7,46 @@ window.addEventListener('DOMContentLoaded', function() {
         
         // initially hide entire row
         row.classList.add('hidden');
-        
+
+        // store image aspect ratios
+        const aspectRatios = new Map();
+
         images.forEach(img => {
-            if (img.complete && img.naturalHeight !== 0) {
+            const loadImage = () => {
+                const aspectRatio = img.naturalWidth / img.naturalHeight;
+                aspectRatios.set(img, aspectRatio);
                 imagesLoaded++;
-                resizeImage(img);
+
+                // check all images in row are loaded
+                if (imagesLoaded === images.length) {
+                    resizeImages(row, aspectRatios);
+                    // unhide row after resizing images
+                    row.classList.remove('hidden');
+                }
+            };
+
+            if (img.complete && img.naturalHeight !== 0) {
+                loadImage();
             } else {
-                img.addEventListener('load', () => {
-                    resizeImage(img);
-                    imagesLoaded++;
-                    // check if all images in the row are loaded
-                    if (imagesLoaded === images.length) {
-                        // show row if all images are loaded
-                        row.classList.remove('hidden');
-                    }
-                });
+                img.addEventListener('load', loadImage);
             }
         });
-        
-        // show row if all images are loaded
-        if (imagesLoaded === images.length) {
-            row.classList.remove('hidden');
-        }
     });
 
-    function resizeImage(img) {
-        const row = img.closest('.row');
+    function resizeImages(row, aspectRatios) {
         let totalAspectRatio = 0;
-        const images = row.querySelectorAll('img');
-    
-        // calculate total aspect ratio of all images in the row
-        images.forEach(image => {
-            if (image.complete && image.naturalHeight !== 0) {
-                const aspectRatio = image.naturalWidth / image.naturalHeight;
-                totalAspectRatio += aspectRatio;
-            }
+        aspectRatios.forEach(aspectRatio => {
+            totalAspectRatio += aspectRatio;
         });
-    
-        // set width of each image based on its aspect ratio
-        images.forEach(image => {
-            if (image.complete && image.naturalHeight !== 0) {
-                const aspectRatio = image.naturalWidth / image.naturalHeight;
-                const percentageWidth = (aspectRatio / totalAspectRatio) * 100;
-                image.style.width = `calc(${percentageWidth}% - 16px)`; // adjust based on margins
-            }
+
+        // get variable image margins
+        const style = getComputedStyle(row.querySelector('img'));
+        const margins = parseFloat(style.margin) + parseFloat(style.margin); // assume margin has 1 value
+        
+        // set image width based on aspect ratio
+        aspectRatios.forEach((aspectRatio, img) => {
+            const percentageWidth = (aspectRatio / totalAspectRatio) * 100;
+            img.style.width = `calc(${percentageWidth}% - ${margins}px)`;
         });
     }
 });
