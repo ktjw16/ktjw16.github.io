@@ -38,7 +38,7 @@
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
+      <a class="nav-title-link" href="..">
         <!-- 
           TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
 
@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Synthesized MIPS Processor</div>
-        <div class="body-text">Created a functional MIPS processor in VHDL that supports 32 instructions.</div>
-        <!-- <image class="project-header-image" src="../assets/images/mips_proc_hw.jpg"> -->
+        <div class="main-title">Embedded Systems Roomba Control</div>
+        <div class="body-text">Programmed a microcontroller in C to remotely control a Roomba.</div>
+        <!-- <image class="project-header-image" src="../assets/images/roomba_mcu.jpg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -84,14 +84,17 @@
         <div class="subheader-text">details</div>
         <div class="project-details-content">
           <div class="body-text">
-            In this project, we created a MIPS processor using VHDL, a hardware description programming language.
-            Our proecessor was able to execute 32 MIPS assembly instructions, and we built 2 main versions of this processor:
-            one that performs each instruction in a single clock cycle, and a 5-stage pipeline processor that can handle
-            multiple instructions simultaneously in one clock cycle. The main goal of this project was to create a functional processor
-            that works as fast and efficiently as possible, and our processor was able to attain a frequency of 49 MHz.
+            In this project, we developed a movement and navigation system in C that
+            remotely controlled an iRobot Create 2. We were ultimately able to navigate
+            the robot through an obstacle course without any visual cues, avoiding obstacles
+            and holes while staying in bounds. This system used ultrasonic and infrared (IR) sensors
+            for real-time data acquisition, and we utilized General-Purpose Input/Output (GPIO)
+            interfaces and Universal Asynchronous Receiver-Transmitter (UART) communication
+            protocols to faciliate sensor integration and data exchange.
           </div>
         </div>
       </div>
+
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
@@ -122,20 +125,13 @@
                   - IMAGE_CAPTION: to the caption of the image
             -->
             <div class="gallery-image-container">
-              <img src="../assets/images/mips_proc_ss.jpg" class="gallery-image">
-              <span class="image-caption-center">Single-Cycle Processor</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/mips_proc_sw.jpg" class="gallery-image">
-              <span class="image-caption-center">Software-Scheduled Pipeline</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/mips_proc_hw.jpg" class="gallery-image">
-              <span class="image-caption-center">Hardware-Scheduled Pipeline,<br>with Forwarding and Hazard Detection</span>
+              <img src="../assets/images/roomba_mcu.jpg" class="gallery-image">
+              <!-- <span class="image-caption">MP-2: Digital Camera</span> -->
             </div>
         </div>
       </div>
     </div>
+
 
     <!-- FOOTER -->
     <div id="footer">

@@ -38,7 +38,7 @@
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
+      <a class="nav-title-link" href="..">
         <!-- 
           TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
 
@@ -68,12 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Oracle Corporation:<br>Software Engineer Intern</div>
-        <div class="body-text">
-          May 2023 — August 2023<br>
-          Santa Clara, California
-        </div>
-        <!-- <image class="project-header-image" src="../assets/images/oracle.jpg"> -->
+        <div class="main-title">Synthesized MIPS Processor</div>
+        <div class="body-text">Created a functional MIPS processor in VHDL that supports 32 instructions.</div>
+        <!-- <image class="project-header-image" src="../assets/images/mips_proc_hw.jpg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -84,55 +81,61 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <!-- <div class="subheader-text">Project Details / Background</div> -->
+        <div class="subheader-text">details</div>
         <div class="project-details-content">
           <div class="body-text">
-            Over the summer of 2023, I worked as a Software Engineer Intern for the Oracle Hardware Development team, under
-            Oracle's Corporate Architecture business unit. In this position, I developed Python scripts that used in-house tools
-            to run static code analysis on the department's codebase. The scripts achieved full codebase coverage across two different
-            product platforms, and I also designed utility scripts to parse and analyze the static code analysis output reports.
-            I integrated all of these automation scripts into the department's nightly build process, streamlining the workflow
-            for over 150 engineers.
+            In this project, we created a MIPS processor using VHDL, a hardware description programming language.
+            Our proecessor was able to execute 32 MIPS assembly instructions, and we built 2 main versions of this processor:
+            one that performs each instruction in a single clock cycle, and a 5-stage pipeline processor that can handle
+            multiple instructions simultaneously in one clock cycle. The main goal of this project was to create a functional processor
+            that works as fast and efficiently as possible, and our processor was able to attain a frequency of 49 MHz.
           </div>
         </div>
       </div>
 
-  <!-- IMAGE GALLERY -->
-  <div id="project-gallery">
-    <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-    <!-- <div class="subheader-text">gallery</div> -->
-    <div class="project-gallery-content">
-        <!-- 
-          TODO
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <!-- <div class="subheader-text">gallery</div> -->
+        <div class="project-gallery-content">
+            <!-- 
+              TODO
 
-          This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
 
-          Full Width Image:
+              Full Width Image:
 
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image: 
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
             <div class="gallery-image-container">
-              <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-              <span class="image-caption">IMAGE_CAPTION</span>
+              <img src="../assets/images/mips_proc_ss.jpg" class="gallery-image">
+              <span class="image-caption-center">Single-Cycle Processor</span>
             </div>
-
-          Half Width Image: 
-
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-              <span class="image-caption">IMAGE_CAPTION</span>
+              <img src="../assets/images/mips_proc_sw.jpg" class="gallery-image">
+              <span class="image-caption-center">Software-Scheduled Pipeline</span>
             </div>
-
-          - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-              - IMAGE_NAME: the name of the image file in assets/images
-              - IMAGE_CAPTION: to the caption of the image
-        -->
-        <div class="gallery-image-container">
-          <img src="../assets/images/oracle.jpg" class="gallery-image">
-          <!-- <span class="image-caption">MP-2: Digital Camera</span> -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/mips_proc_hw.jpg" class="gallery-image">
+              <span class="image-caption-center">Hardware-Scheduled Pipeline,<br>with Forwarding and Hazard Detection</span>
+            </div>
         </div>
+      </div>
     </div>
-  </div>
-</div>
-
 
     <!-- FOOTER -->
     <div id="footer">

@@ -38,7 +38,7 @@
 	<body>
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="nav-title-link" href="../index.html">
+      <a class="nav-title-link" href="..">
         <!-- 
           TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
 
@@ -68,9 +68,9 @@
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">Embedded Systems Roomba Control</div>
-        <div class="body-text">Programmed a microcontroller in C to remotely control a Roomba.</div>
-        <!-- <image class="project-header-image" src="../assets/images/roomba_mcu.jpg"> -->
+        <div class="main-title">ZedBoard FPGA Projects</div>
+        <div class="body-text">Created and synthesized various projects on the ZedBoard and Xilinx Zynq FPGA.</div>
+        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -81,20 +81,17 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">details</div>
+        <div class="subheader-text">background</div>
         <div class="project-details-content">
           <div class="body-text">
-            In this project, we developed a movement and navigation system in C that
-            remotely controlled an iRobot Create 2. We were ultimately able to navigate
-            the robot through an obstacle course without any visual cues, avoiding obstacles
-            and holes while staying in bounds. This system used ultrasonic and infrared (IR) sensors
-            for real-time data acquisition, and we utilized General-Purpose Input/Output (GPIO)
-            interfaces and Universal Asynchronous Receiver-Transmitter (UART) communication
-            protocols to faciliate sensor integration and data exchange.
+            As part of Iowa State's CPRE 4880 course, Embedded Systems Design, we completed various projects using the
+            ZedBoard, a development kit that uses the AMD Xilinx Zynq-7000 chip. These projects ranged from implementing
+            a Nintendo Entertainment System emulation to remotely controlling a quadcopter drone. We designed the 
+            hardware components of each project using the Vivado Design Suite, and we wrote embedded application code in
+            C using Vitis.
           </div>
         </div>
       </div>
-
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
@@ -124,14 +121,21 @@
                   - IMAGE_NAME: the name of the image file in assets/images
                   - IMAGE_CAPTION: to the caption of the image
             -->
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/nes.jpg" class="gallery-image">
+              <span class="image-caption">MP-0: NES Emulation</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/quadcopter.jpg" class="gallery-image">
+              <span class="image-caption">MP-1: Quad UAV Interfacing</span>
+            </div>
             <div class="gallery-image-container">
-              <img src="../assets/images/roomba_mcu.jpg" class="gallery-image">
-              <!-- <span class="image-caption">MP-2: Digital Camera</span> -->
+              <img src="../assets/images/fpga_camera.jpg" class="gallery-image">
+              <span class="image-caption">MP-2: Digital Camera</span>
             </div>
         </div>
       </div>
     </div>
-
 
     <!-- FOOTER -->
     <div id="footer">
