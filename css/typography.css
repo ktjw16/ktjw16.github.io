@@ -52,6 +52,10 @@ a:hover {
   font-weight: 500;
 }
 
+.body-text b {
+  font-weight: 700;
+}
+
 .project-card-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -66,4 +70,8 @@ a:hover {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
+}
+
+.project-title u {
+  text-decoration-thickness: 2px;
 }
