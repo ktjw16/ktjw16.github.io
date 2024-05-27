@@ -1,47 +1,49 @@
-<!-- https://github.com/ndoherty-xyz/unemployables-portfolio-template -->
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-    <!-- 
-      TODO
-
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
     <link rel="icon" href="./assets/images/avatar.png" />
-		<title>katie wolf</title>
-    <meta name="description" content="Katie Wolf's Portfolio">
+    <title>Katie Wolf</title>
+    <meta name="description" content="Katie Wolf's Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
 
-		<script defer src="./js/script.js"></script>
-	</head>
-	<body>
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <div id="sidenav">
+      <a href="."><span class="nav-title">Katie Wolf</span></a><br />
+      <a href="./info">Info</a><br />
+      Experience<br />
+      <a href="./isu">Iowa State University</a><br />
+      <a href="./oracle">Oracle Corporation</a><br />
+      <a href="./collins">Collins Aerospace</a><br />
+      Projects<br />
+      <a href="./asic">Digital ASIC Fabrication</a><br />
+      <a href="./fpga">Embedded Systems Design</a><br />
+      <a href="./mips">MIPS Processor</a><br />
+      <a href="./songshare">SongShare</a><br />
+      <a href="./roomba">Roomba Control</a>
+    </div>
+
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href=".">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
-        <span class="nav-title">ktjw</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <a class="button" href="mailto:ktjw16@gmail.com">
+        <!-- <span class="nav-title">ktjw</span> -->
+        <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <!-- <a class="button" href="mailto:ktjw16@gmail.com">
           <span class="button-text">contact me</span>
-        </a>
+        </a> -->
       </a>
     </div>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
@@ -52,13 +54,20 @@
             - Change the number to point to your Unemployable & replace the OpenSea link with your own
             - If you aren't using an Unemployable as your image, remove the entire "a" element
           -->
-          <img src="./assets/images/avatar.png" class="portfolio-header-image">
-          <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+          <img
+            src="./assets/images/avatar.png"
+            class="portfolio-header-image"
+          />
+          <a
+            class="no-underline"
+            target="_blank"
+            href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311"
+          >
             <!-- <span class="image-caption">Unemployables #1311</span> -->
           </a>
         </div>
 
-          <!-- 
+        <!-- 
             TODO
 
             - Change the main-title to whatver you want
@@ -66,14 +75,19 @@
             - Edit the button text if you feel like it. It will link to the projects section below.
           -->
         <div id="portfolio-header-text-container">
-            <div class="header-text">
-              <span class="main-title">Hi, I'm Katie.</span>
-              <div class="body-text">I’m an undergraduate student in Computer Engineering.</div>
+          <div class="header-text">
+            <span class="main-title">Hi, I'm Katie.</span>
+            <div class="body-text">
+              I’m an undergraduate student in Computer Engineering.
             </div>
-            <a class="button" id="my-work-link">
-              <span class="button-text">learn more</span> 
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+          </div>
+          <a class="button" id="my-work-link">
+            <span class="button-text">learn more</span>
+            <image
+              src="./assets/icons/arrow-right.svg"
+              class="right-arrow-icon"
+            />
+          </a>
         </div>
       </div>
 
@@ -88,19 +102,23 @@
         <span class="subheader-text">about me</span>
         <div class="about-section-content">
           <div class="body-text">
-            My name is Katie Wolf, and I'm a fourth-year Computer Engineering student at Iowa State University.
-            I'm also minoring in Cybersecurity, Mathematics, and Chinese.
-            I'm most interested in the intersection between hardware and software, and through my classes and internships,
-            I've gained experience in software engineering, embedded systems, digital design, and security.
-            After graduating in December 2024, I plan to pursue a full-time role in software or firmware engineering.
+            My name is Katie Wolf, and I'm a fourth-year Computer Engineering
+            student at Iowa State University. I'm also minoring in
+            Cybersecurity, Mathematics, and Chinese. I'm most interested in the
+            intersection between hardware and software, and through my classes
+            and internships, I've gained experience in software engineering,
+            embedded systems, digital design, and security. After graduating in
+            December 2024, I plan to pursue a full-time role in software or
+            firmware engineering.
           </div>
           <div class="body-text">
-            In my free time, I enjoy taking <a href="./photograpraphy">photos</a>, both digital and film, and listening to music.
-            My favorite genres are alternative rock and indie, but I'm always on the lookout for something new.
+            In my free time, I enjoy taking
+            <a href="./photograpraphy">photos</a>, both digital and film, and
+            listening to music. My favorite genres are alternative rock and
+            indie, but I'm always on the lookout for something new.
           </div>
         </div>
       </div>
-
 
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
@@ -130,38 +148,48 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <a href="./isu" target="_self"><img src="./assets/images/isu.jpg" class="project-image"></a>
+            <a href="./isu" target="_self"
+              ><img src="./assets/images/isu.jpg" class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./isu" target="_self">Iowa State University</a>
               </div>
-              <div class="body-text project-card-text">Undergraduate TA for ISU's Computer Architecture course</div>
+              <div class="body-text project-card-text">
+                Undergraduate TA for ISU's Computer Architecture course
+              </div>
             </div>
           </div>
 
           <div class="project-card">
-            <a href="./oracle" target="_self"><img src="./assets/images/oracle.jpg" class="project-image"></a>
+            <a href="./oracle" target="_self"
+              ><img src="./assets/images/oracle.jpg" class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./oracle" target="_self">Oracle Corporation</a>
               </div>
-              <div class="body-text project-card-text">Software Engineer Intern for the Hardware Development team</div>
+              <div class="body-text project-card-text">
+                Software Engineer Intern for the Hardware Development team
+              </div>
             </div>
           </div>
 
           <div class="project-card">
-            <a href="./collins" target="_self"><img src="./assets/images/collins.jpg" class="project-image"></a>
+            <a href="./collins" target="_self"
+              ><img src="./assets/images/collins.jpg" class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./collins" target="_self">Collins Aerospace</a>
               </div>
-              <div class="body-text project-card-text">Software Engineer Co-op for the Avionics Displays team</div>
+              <div class="body-text project-card-text">
+                Software Engineer Co-op for the Avionics Displays team
+              </div>
             </div>
           </div>
-          
         </div>
       </div>
-
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
@@ -192,12 +220,17 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <a href="./asic" target="_self"><img src="./assets/images/chipfab.jpg" class="project-image"></a>
+            <a href="./asic" target="_self"
+              ><img src="./assets/images/chipfab.jpg" class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./asic" target="_self">Senior Design</a>
               </div>
-              <div class="body-text project-card-text">Designing a chip framework that supports and connects smaller ASIC projects.</div>
+              <div class="body-text project-card-text">
+                Designing a chip framework that supports and connects smaller
+                ASIC projects.
+              </div>
             </div>
             <!-- <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">read more</span>
@@ -206,12 +239,17 @@
           </div>
 
           <div class="project-card">
-            <a href="./fpga" target="_self"><img src="./assets/images/zedboard.jpg" class="project-image"></a>
+            <a href="./fpga" target="_self"
+              ><img src="./assets/images/zedboard.jpg" class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./fpga" target="_self">FPGA Projects</a>
               </div>
-              <div class="body-text project-card-text">Created and synthesized various projects on the ZedBoard and Xilinx Zynq FPGA.</div>
+              <div class="body-text project-card-text">
+                Created and synthesized various projects on the ZedBoard and
+                Xilinx Zynq FPGA.
+              </div>
             </div>
             <!-- <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
@@ -220,12 +258,19 @@
           </div>
 
           <div class="project-card">
-            <a href="./mips" target="_self"><img src="./assets/images/mips_proc_hw.jpg" class="project-image"></a>
+            <a href="./mips" target="_self"
+              ><img
+                src="./assets/images/mips_proc_hw.jpg"
+                class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./mips" target="_self">MIPS Processor</a>
               </div>
-              <div class="body-text project-card-text">Created a functional MIPS processor in VHDL that supports 32 instructions.</div>
+              <div class="body-text project-card-text">
+                Created a functional MIPS processor in VHDL that supports 32
+                instructions.
+              </div>
             </div>
             <!-- <a class="button" href="./project-pages/project-template.html">
               <span class="button-text">Read More</span>
@@ -234,12 +279,19 @@
           </div>
 
           <div class="project-card">
-            <a href="./songshare" target="_self"><img src="./assets/images/songshare_cover.jpg" class="project-image"></a>
+            <a href="./songshare" target="_self"
+              ><img
+                src="./assets/images/songshare_cover.jpg"
+                class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./songshare" target="_self">SongShare</a>
               </div>
-              <div class="body-text project-card-text">Developed a backend system for a music-sharing social media platform.</div>
+              <div class="body-text project-card-text">
+                Developed a backend system for a music-sharing social media
+                platform.
+              </div>
             </div>
             <!-- <a class="button" href="./projects/project-template.html">
               <span class="button-text">Read More</span>
@@ -248,12 +300,16 @@
           </div>
 
           <div class="project-card">
-            <a href="./roomba" target="_self"><img src="./assets/images/roomba.jpg" class="project-image"></a>
+            <a href="./roomba" target="_self"
+              ><img src="./assets/images/roomba.jpg" class="project-image"
+            /></a>
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <a href="./roomba" target="_self">Roomba Control</a>
               </div>
-              <div class="body-text project-card-text">Programmed a microcontroller in C to remotely control a Roomba.</div>
+              <div class="body-text project-card-text">
+                Programmed a microcontroller in C to remotely control a Roomba.
+              </div>
             </div>
             <!-- <a class="button" href="./projects/project-template.html">
               <span class="button-text">Read More</span>
@@ -262,35 +318,48 @@
           </div>
 
           <div class="project-card">
-            <img src="./assets/images/avatar.png" class="project-image">
+            <img src="./assets/images/avatar.png" class="project-image" />
             <div class="project-card-text-container">
               <div class="subheader-text project-title">
                 <u>Portfolio Website</u>
               </div>
-              <div class="body-text project-card-text">Created this website with HTML, CSS, and Javascript.</div>
+              <div class="body-text project-card-text">
+                Created this website with HTML, CSS, and Javascript.
+              </div>
             </div>
             <!-- <a class="button" href="./projects/project-template.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a> -->
           </div>
-          
         </div>
       </div>
-
 
       <div id="about-section">
         <span class="subheader-text">documents</span>
         <div class="about-section-content">
           <div class="body-text">
-            Feel free to check out my full <a href="./assets/files/Katie_Wolf_Resume.pdf" target="_blank">resume</a>.
-            <br><br>
-            Read my reflection essays here:<br>
-            — <a href="./assets/files/cumulative_reflection.pdf" target="_blank">Cumulative Reflection</a>
-            <br>
-            — <a href="./assets/files/general_education_reflection.pdf" target="_blank">General Education Reflection</a>
-            <br>
-            — <a href="./assets/files/ethics_essay.pdf" target="_blank">Ethics Reflection</a>
+            Feel free to check out my full
+            <a href="./assets/files/Katie_Wolf_Resume.pdf" target="_blank"
+              >resume</a
+            >. <br /><br />
+            Read my reflection essays here:<br />
+            —
+            <a href="./assets/files/cumulative_reflection.pdf" target="_blank"
+              >Cumulative Reflection</a
+            >
+            <br />
+            —
+            <a
+              href="./assets/files/general_education_reflection.pdf"
+              target="_blank"
+              >General Education Reflection</a
+            >
+            <br />
+            —
+            <a href="./assets/files/ethics_essay.pdf" target="_blank"
+              >Ethics Reflection</a
+            >
           </div>
         </div>
       </div>
@@ -299,47 +368,61 @@
         <span class="subheader-text">current favorites</span>
         <div class="about-section-content">
           <div class="body-text">
-            <b>Song:</b> Pictures of You - The Cure<br>
-            <b>Movie:</b> Dead Poets Society<br>
-            <b>TV Show:</b> The Bear<br>
-            <b>Anime:</b> Cowboy Bebop<br>
+            <b>Song:</b> Pictures of You - The Cure<br />
+            <b>Movie:</b> Dead Poets Society<br />
+            <b>TV Show:</b> The Bear<br />
+            <b>Anime:</b> Cowboy Bebop<br />
             <!-- <a href="./photography.html" target="_self">photos</a> -->
           </div>
         </div>
       </div>
-
-
     </div>
-
 
     <!-- FOOTER -->
     <div id="footer">
-      <!-- 
-        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+      <a href="mailto:ktjw16@gmail.com"
+        >Email
+        <svg width="12" height="12" viewBox="0 0 27 27">
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="#000"
+            stroke-width="3.04"
+            transform="rotate(45 16.036 18.086)"
+          >
+            <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+            <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+          </g></svg></a
+      ><br />
 
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/katiejwolf/">
-        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" target="_blank" href="https://github.com/ktjw16">
-        <image src="./assets/icons/github.svg" class="footer-icon"/>
-      </a>
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:ktjw16@gmail.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
-      </a>
-      
+      <a href="https://www.linkedin.com/in/katiejwolf/"
+        >LinkedIn
+        <svg width="12" height="12" viewBox="0 0 27 27">
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="#000"
+            stroke-width="3.04"
+            transform="rotate(45 16.036 18.086)"
+          >
+            <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+            <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+          </g></svg></a
+      ><br />
+      <a href="https://github.com/ktjw16"
+        >GitHub
+        <svg width="12" height="12" viewBox="0 0 27 27">
+          <g
+            fill="none"
+            fill-rule="evenodd"
+            stroke="#000"
+            stroke-width="3.04"
+            transform="rotate(45 16.036 18.086)"
+          >
+            <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+            <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+          </g></svg
+      ></a>
     </div>
-
-	</body>
+  </body>
 </html>

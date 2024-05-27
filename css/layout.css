@@ -15,20 +15,64 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Side Nav */
+#sidenav {
+  height: 100%;
+  width: 35%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: white;
+  padding: 0px 16px 0px 16px;
+  font-size: 15px;
+  color: black;
+}
 
+#sidenav a {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-top: 10px;
+}
 
+#sidenav a:hover {
+  /* text-decoration: underline; */
+  font-style: italic;
+}
+
+/* Footer Styling */
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  padding: 10px 0px 10px 16px;
+  background-color: white;
+  z-index: 2;
+}
+
+#footer a {
+  display: inline-block;
+  padding-top: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+#footer a:hover {
+  /* border-bottom: 1px solid; */
+  font-style: italic;
+}
 
 /* Main Page Layout */
-
 #main-content {
   margin: 225px 425px;
+  margin-left: 35%;
   display: flex;
   flex-direction: column;
   gap: 96px;
 }
-
-
-
 
 /* Portfolio Header */
 
@@ -57,9 +101,6 @@ body {
   flex-basis: 50%;
 }
 
-
-
-
 /* About Section */
 
 #about-section {
@@ -73,9 +114,6 @@ body {
   flex-direction: column;
   gap: 34px;
 }
-
-
-
 
 /* Project Section */
 
@@ -91,31 +129,28 @@ body {
   flex-wrap: wrap;
 }
 
-    /* Project Cards */
+/* Project Cards */
 
-    .project-card {
-      max-width: calc((100% - 32px) / 3);
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding-bottom: 20px;
-    }
+.project-card {
+  max-width: calc((100% - 32px) / 3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
 
-    .project-card-text-container {
-      flex-direction: column;
-      display: flex;
-      gap: 16px;
-    }
+.project-card-text-container {
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
+}
 
-    .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-
-
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
 
 /* Project Pages */
 
@@ -142,41 +177,41 @@ body {
   gap: 34px;
 }
 
-    /* Project Gallery */
+/* Project Gallery */
 
-    #project-gallery {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
+#project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-    .project-gallery-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 34px 16px;
-    }
+.project-gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px 16px;
+}
 
-    .gallery-image-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+.gallery-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .gallery-image-container.half-width {
-      width: calc((100% - 16px) / 2);
-    }
+.gallery-image-container.half-width {
+  width: calc((100% - 16px) / 2);
+}
 
-    .gallery-image {
-      width: 100%;
-      height: auto;
-    }
-
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
 
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content {
     margin: 225px 275px;
+    margin-left: 35%;
   }
 }
 
@@ -184,6 +219,7 @@ body {
 @media only screen and (max-width: 1200px) {
   #main-content {
     margin: 225px 175px;
+    margin-left: 35%;
   }
 }
 
@@ -191,6 +227,7 @@ body {
 @media only screen and (max-width: 1000px) {
   #main-content {
     margin: 225px 75px;
+    margin-left: 35%;
   }
 }
 
@@ -198,6 +235,7 @@ body {
 @media only screen and (max-width: 800px) {
   #main-content {
     margin: 150px 50px;
+    margin-left: 35%;
   }
 
   #portfolio-header {
@@ -213,12 +251,10 @@ body {
 @media only screen and (max-width: 600px) {
   #main-content {
     margin: 125px 20px;
+    margin-left: 35%;
   }
 
   .project-card {
     max-width: 100%;
   }
 }
-
-
-
