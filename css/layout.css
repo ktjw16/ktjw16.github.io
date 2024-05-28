@@ -99,25 +99,38 @@ body {
 
 /* Main Page Layout */
 #main-content {
-  margin: 225px 425px;
+  margin: 16px 16px;
   margin-left: 30%;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   gap: 96px;
 }
 
+#home-images {
+  display: block;
+}
+
+#home-image {
+  /* display: flex; */
+  width: 100%;
+  padding-top: 10px;
+}
+
 /* Portfolio Header */
 
 #portfolio-header {
+  margin-top: 15vh;
+  margin-right: 30px;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   align-items: center;
 }
 
 #portfolio-header-image-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   flex-basis: 50%;
 }
 
@@ -242,32 +255,35 @@ body {
 /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1600px) {
   #main-content {
-    margin: 225px 275px;
-    margin-left: 30%;
+    /* margin: 225px 275px;
+    margin-left: 30%; */
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and below) */
 @media only screen and (max-width: 1200px) {
   #main-content {
-    margin: 225px 175px;
-    margin-left: 30%;
+    /* margin: 225px 175px;
+    margin-left: 30%; */
   }
 }
 
 /* Large devices (laptops/desktops, 1000px and below) */
 @media only screen and (max-width: 1000px) {
   #main-content {
-    margin: 225px 75px;
-    margin-left: 30%;
+    /* margin: 225px 75px;
+    margin-left: 30%; */
+  }
+  #portfolio-header {
+    flex-direction: column;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 800px and below) */
 @media only screen and (max-width: 800px) {
   #main-content {
-    margin: 150px 50px;
-    margin-left: 30%;
+    /* margin: 150px 50px;
+    margin-left: 30%; */
   }
 
   #portfolio-header {
