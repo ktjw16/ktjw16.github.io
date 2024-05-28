@@ -18,28 +18,40 @@ body {
 /* Side Nav */
 #sidenav {
   height: 100%;
-  width: 35%;
+  width: 30%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
   background-color: white;
-  padding: 0px 16px 0px 16px;
+  padding: 16px 16px 0px 16px;
   font-size: 15px;
   color: black;
 }
 
-#sidenav a {
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid;
-  padding-top: 10px;
+.nav-header {
+  display: block;
+  padding-bottom: 5px;
 }
 
-#sidenav a:hover {
-  /* text-decoration: underline; */
+.nav-sublinks a {
+  padding-left: 10px;
+}
+
+.nav-sublinks .active-link {
+  display: block;
+  padding-left: 10px;
+  padding-bottom: 5px;
   font-style: italic;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+#sidenav a {
+  display: block;
+  padding-bottom: 5px;
 }
 
 /* Footer Styling */
@@ -47,28 +59,48 @@ body {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 35%;
-  padding: 10px 0px 10px 16px;
+  width: 30%;
+  padding: 10px 0px 16px 16px;
   background-color: white;
   z-index: 2;
 }
 
 #footer a {
-  display: inline-block;
-  padding-top: 10px;
-  text-decoration: none;
-  border-bottom: 1px solid;
+  display: block;
+  padding-bottom: 10px;
 }
 
-#footer a:hover {
-  /* border-bottom: 1px solid; */
-  font-style: italic;
+.external-link {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  padding-right: 3px;
+}
+
+.external-link:after {
+  content: "\00A0";
+  position: absolute;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  letter-spacing: 1000px;
+}
+
+#copyright {
+  display: block;
+  padding-top: 8px;
+  font-size: 12px;
+  color: #404040;
 }
 
 /* Main Page Layout */
 #main-content {
   margin: 225px 425px;
-  margin-left: 35%;
+  margin-left: 30%;
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -211,7 +243,7 @@ body {
 @media only screen and (max-width: 1600px) {
   #main-content {
     margin: 225px 275px;
-    margin-left: 35%;
+    margin-left: 30%;
   }
 }
 
@@ -219,7 +251,7 @@ body {
 @media only screen and (max-width: 1200px) {
   #main-content {
     margin: 225px 175px;
-    margin-left: 35%;
+    margin-left: 30%;
   }
 }
 
@@ -227,7 +259,7 @@ body {
 @media only screen and (max-width: 1000px) {
   #main-content {
     margin: 225px 75px;
-    margin-left: 35%;
+    margin-left: 30%;
   }
 }
 
@@ -235,7 +267,7 @@ body {
 @media only screen and (max-width: 800px) {
   #main-content {
     margin: 150px 50px;
-    margin-left: 35%;
+    margin-left: 30%;
   }
 
   #portfolio-header {
@@ -251,7 +283,7 @@ body {
 @media only screen and (max-width: 600px) {
   #main-content {
     margin: 125px 20px;
-    margin-left: 35%;
+    margin-left: 30%;
   }
 
   .project-card {

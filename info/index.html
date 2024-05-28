@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="./assets/images/avatar.png" />
+    <title>Katie Wolf</title>
+    <meta name="description" content="Katie Wolf's Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <div id="sidenav">
+      <span class="nav-title"><a href=".">Katie Wolf</a></span>
+      <br/><a href="./info">Info</a>
+      <a href="./Katie_Wolf_Resume.pdf">Resume</a><br/>
+      <span class="nav-header">Experience</span>
+      <span class="nav-sublinks">
+        <a href="./isu">Iowa State University</a>
+        <a href="./oracle">Oracle Corporation</a>
+        <a href="./collins">Collins Aerospace</a></span>
+        <br/>
+      <span class="nav-header">Projects</span>
+      <span class="nav-sublinks">
+        <a href="./asic">Digital ASIC Fabrication</a>
+        <a href="./fpga">Embedded Systems Design</a>
+        <a href="./mips">VHDL MIPS Processor</a>
+        <a href="./songshare">SongShare Android App</a>
+        <a href="./roomba">Embedded Roomba Control</a></span>
+        <br/>
+      <span class="nav-header">Et Cetera</span>
+      <span class="nav-sublinks">
+        <a href="./photo">Photography</a>
+        <a href="./photo">Reflections</a>
+        <a href="./photo">Archive</a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img
+            src="./assets/images/avatar.png"
+            class="portfolio-header-image"
+          />
+          <a
+            class="no-underline"
+            target="_blank"
+            href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311"
+          >
+            <!-- <span class="image-caption">Unemployables #1311</span> -->
+          </a>
+        </div>
+
+        <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+          <div class="header-text">
+            <span class="main-title">Hi, I'm Katie.</span>
+            <div class="body-text">
+              I’m an undergraduate student in Computer Engineering.
+            </div>
+          </div>
+          <a class="button" id="my-work-link">
+            <span class="button-text">learn more</span>
+            <image
+              src="./assets/icons/arrow-right.svg"
+              class="right-arrow-icon"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">about me</span>
+        <div class="about-section-content">
+          <div class="body-text">
+            My name is Katie Wolf, and I'm a fourth-year Computer Engineering
+            student at Iowa State University. I'm also minoring in
+            Cybersecurity, Mathematics, and Chinese. I'm most interested in the
+            intersection between hardware and software, and through my classes
+            and internships, I've gained experience in software engineering,
+            embedded systems, digital design, and security. After graduating in
+            December 2024, I plan to pursue a full-time role in software or
+            firmware engineering.
+          </div>
+          <div class="body-text">
+            In my free time, I enjoy taking
+            <a href="./photograpraphy">photos</a>, both digital and film, and
+            listening to music. My favorite genres are alternative rock and
+            indie, but I'm always on the lookout for something new.
+          </div>
+        </div>
+      </div>
+
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">work experience</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <a href="./isu" target="_self"
+              ><img src="./assets/images/isu.jpg" class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./isu" target="_self">Iowa State University</a>
+              </div>
+              <div class="body-text project-card-text">
+                Undergraduate TA for ISU's Computer Architecture course
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <a href="./oracle" target="_self"
+              ><img src="./assets/images/oracle.jpg" class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./oracle" target="_self">Oracle Corporation</a>
+              </div>
+              <div class="body-text project-card-text">
+                Software Engineer Intern for the Hardware Development team
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <a href="./collins" target="_self"
+              ><img src="./assets/images/collins.jpg" class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./collins" target="_self">Collins Aerospace</a>
+              </div>
+              <div class="body-text project-card-text">
+                Software Engineer Co-op for the Avionics Displays team
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <a href="./asic" target="_self"
+              ><img src="./assets/images/chipfab.jpg" class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./asic" target="_self">Senior Design</a>
+              </div>
+              <div class="body-text project-card-text">
+                Designing a chip framework that supports and connects smaller
+                ASIC projects.
+              </div>
+            </div>
+            <!-- <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">read more</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+
+          <div class="project-card">
+            <a href="./fpga" target="_self"
+              ><img src="./assets/images/zedboard.jpg" class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./fpga" target="_self">FPGA Projects</a>
+              </div>
+              <div class="body-text project-card-text">
+                Created and synthesized various projects on the ZedBoard and
+                Xilinx Zynq FPGA.
+              </div>
+            </div>
+            <!-- <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+
+          <div class="project-card">
+            <a href="./mips" target="_self"
+              ><img
+                src="./assets/images/mips_proc_hw.jpg"
+                class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./mips" target="_self">MIPS Processor</a>
+              </div>
+              <div class="body-text project-card-text">
+                Created a functional MIPS processor in VHDL that supports 32
+                instructions.
+              </div>
+            </div>
+            <!-- <a class="button" href="./project-pages/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+
+          <div class="project-card">
+            <a href="./songshare" target="_self"
+              ><img
+                src="./assets/images/songshare_cover.jpg"
+                class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./songshare" target="_self">SongShare</a>
+              </div>
+              <div class="body-text project-card-text">
+                Developed a backend system for a music-sharing social media
+                platform.
+              </div>
+            </div>
+            <!-- <a class="button" href="./projects/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+
+          <div class="project-card">
+            <a href="./roomba" target="_self"
+              ><img src="./assets/images/roomba.jpg" class="project-image"
+            /></a>
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <a href="./roomba" target="_self">Roomba Control</a>
+              </div>
+              <div class="body-text project-card-text">
+                Programmed a microcontroller in C to remotely control a Roomba.
+              </div>
+            </div>
+            <!-- <a class="button" href="./projects/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/images/avatar.png" class="project-image" />
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">
+                <u>Portfolio Website</u>
+              </div>
+              <div class="body-text project-card-text">
+                Created this website with HTML, CSS, and Javascript.
+              </div>
+            </div>
+            <!-- <a class="button" href="./projects/project-template.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+      <div id="about-section">
+        <span class="subheader-text">documents</span>
+        <div class="about-section-content">
+          <div class="body-text">
+            Feel free to check out my full
+            <a href="./assets/files/Katie_Wolf_Resume.pdf" target="_blank"
+              >resume</a
+            >. <br /><br />
+            Read my reflection essays here:<br />
+            —
+            <a href="./assets/files/cumulative_reflection.pdf" target="_blank"
+              >Cumulative Reflection</a
+            >
+            <br />
+            —
+            <a
+              href="./assets/files/general_education_reflection.pdf"
+              target="_blank"
+              >General Education Reflection</a
+            >
+            <br />
+            —
+            <a href="./assets/files/ethics_essay.pdf" target="_blank"
+              >Ethics Reflection</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="about-section">
+        <span class="subheader-text">current favorites</span>
+        <div class="about-section-content">
+          <div class="body-text">
+            <b>Song:</b> Pictures of You - The Cure<br />
+            <b>Movie:</b> Dead Poets Society<br />
+            <b>TV Show:</b> The Bear<br />
+            <b>Anime:</b> Cowboy Bebop<br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a href="mailto:ktjw16@gmail.com"
+        >Email
+        <span class="external-link">
+          <svg class="external-link-svg" width="12" height="12" viewBox="0 0 27 27">
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke-width="3.04"
+              transform="rotate(45 16.036 18.086)"
+            >
+              <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+              <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+            </g></svg></span
+      ></a>
+
+      <a href="https://www.linkedin.com/in/katiejwolf/"
+        >LinkedIn
+        <span class="external-link">
+          <svg class="external-link-svg" width="12" height="12" viewBox="0 0 27 27">
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke-width="3.04"
+              transform="rotate(45 16.036 18.086)"
+            >
+              <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+              <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+            </g></svg></span
+      ></a>
+
+      <a href="https://github.com/ktjw16"
+        >GitHub
+        <span class="external-link">
+          <svg class="external-link-svg" width="12" height="12" viewBox="0 0 27 27">
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke-width="3.04"
+              transform="rotate(45 16.036 18.086)"
+            >
+              <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+              <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+            </g></svg></span
+      ></a>
+      <span id="copyright">&copy; 2024 KW</span>
+    </div>
+  </body>
+</html>

@@ -7,16 +7,37 @@ a {
   color: black;
   text-decoration: underline;
   text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
 }
 
 a:hover {
-  text-decoration: none;
+  font-style: italic;
   cursor: pointer;
 }
 
+a:active {
+  color: #606060;
+}
+
 .nav-title {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.nav-title a {
+  text-decoration: none;
+}
+
+.nav-title a:hover {
+  font-style: normal;
+}
+
+a .external-link-svg {
+  stroke: black;
+}
+
+a:active .external-link-svg {
+  stroke: #606060;
 }
 
 .button-text {
