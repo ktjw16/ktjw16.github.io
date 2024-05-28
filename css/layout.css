@@ -13,9 +13,10 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
-/* Side Nav */
+/* NAVIGATION */
 #sidenav {
   height: 100%;
   width: 30%;
@@ -24,7 +25,6 @@ body {
   top: 0;
   left: 0;
   overflow-x: hidden;
-  background-color: white;
   padding: 16px 16px 0px 16px;
   font-size: 15px;
   color: black;
@@ -54,14 +54,13 @@ body {
   padding-bottom: 5px;
 }
 
-/* Footer Styling */
+/* FOOTER */
 #footer {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 30%;
   padding: 10px 0px 16px 16px;
-  background-color: white;
   z-index: 2;
 }
 
@@ -101,10 +100,10 @@ body {
 #main-content {
   margin: 16px 16px;
   margin-left: 30%;
-  margin-right: 20px;
+  margin-right: 50px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 20px;
 }
 
 #home-images {
@@ -119,45 +118,46 @@ body {
 
 /* Portfolio Header */
 
-#portfolio-header {
+.columns {
   margin-top: 15vh;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   display: flex;
   gap: 25px;
   align-items: center;
 }
 
-#portfolio-header-image-container {
+.columns-image-container {
   display: flex;
   flex-direction: column;
   gap: 5px;
   flex-basis: 50%;
 }
 
-.portfolio-header-image {
+.columns-image {
   width: 100%;
   height: auto;
 }
 
-#portfolio-header-text-container {
+.columns-text-container {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 20px;
   flex-basis: 50%;
 }
 
 /* About Section */
 
 #about-section {
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .about-section-content {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 20px;
 }
 
 /* Project Section */
@@ -200,9 +200,10 @@ body {
 /* Project Pages */
 
 #project-header {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
 }
 
 .project-header-image {
@@ -219,7 +220,7 @@ body {
 .project-details-content {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  gap: 20px;
 }
 
 /* Project Gallery */
@@ -233,14 +234,14 @@ body {
 .project-gallery-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 34px 16px;
+  gap: 20px 16px;
 }
 
 .gallery-image-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .gallery-image-container.half-width {
@@ -274,7 +275,7 @@ body {
     /* margin: 225px 75px;
     margin-left: 30%; */
   }
-  #portfolio-header {
+  .columns {
     flex-direction: column;
   }
 }
@@ -286,7 +287,7 @@ body {
     margin-left: 30%; */
   }
 
-  #portfolio-header {
+  .columns {
     flex-direction: column;
   }
 

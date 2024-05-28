@@ -1,11 +1,10 @@
-
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Mulish", sans-serif; */
 }
 
 a {
   color: black;
-  text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
@@ -17,6 +16,15 @@ a:hover {
 
 a:active {
   color: #606060;
+}
+
+a.no-underline {
+  text-decoration: none;
+}
+
+a.no-underline:hover {
+  /* text-decoration: underline; */
+  cursor: pointer;
 }
 
 .nav-title {
@@ -45,21 +53,27 @@ a:active .external-link-svg {
   font-weight: 400;
 }
 
-.image-caption {
+.image-caption-left {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.image-caption-center {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.image-caption-right {
   font-size: 12px;
   font-weight: 400;
   text-align: right;
 }
 
-.image-caption-center {
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-
 .main-title {
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .subheader-text {
