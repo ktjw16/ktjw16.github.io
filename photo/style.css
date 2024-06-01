@@ -48,10 +48,10 @@
 }
   
 /* Small devices (portrait tablets and large phones, 600px and below) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   #photo-grid {
-    /* margin: 70px 10px; */
-    margin-left: 30%;
+    margin: 20px 10px;
+    /* margin-left: 30%; */
   }
 
   .row img {
