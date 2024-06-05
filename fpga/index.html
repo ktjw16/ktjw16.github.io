@@ -16,70 +16,65 @@
   </head>
   <body>
     <div id="overlay-nav">
-      <a href="javascript:void(0)" class="closebtn" onclick="toggleNavOverlay()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleNavOverlay()"
+        >&times;</a
+      >
     </div>
-    <div id="sidenav" class="nav">
+    <nav id="sidenav" class="nav">
       <span class="nav-title"><a href="../">Katie Wolf</a></span>
-      <br/><a href="../info">Info</a>
-      <a href="../Katie_Wolf_Resume.pdf">Resume</a><br/>
+      <br /><a href="../info">Info</a>
+      <a href="../Katie_Wolf_Resume.pdf">Resume</a><br />
       <span class="nav-header">Experience</span>
       <span class="nav-sublinks">
         <a href="../isu">Iowa State University</a>
         <a href="../oracle">Oracle Corporation</a>
-        <a href="../collins">Collins Aerospace</a></span>
-        <br/>
+        <a href="../collins">Collins Aerospace</a></span
+      >
+      <br />
       <span class="nav-header">Projects</span>
       <span class="nav-sublinks">
         <a href="../asic">Digital ASIC Fabrication</a>
         <a href=".">Embedded Systems Design</a>
         <a href="../mips">VHDL MIPS Processor</a>
         <a href="../songshare">SongShare Android App</a>
-        <a href="../roomba">Embedded Roomba Control</a></span>
-        <br/>
+        <a href="../roomba">Embedded Roomba Control</a></span
+      >
+      <br />
       <span class="nav-header">Et Cetera</span>
       <span class="nav-sublinks">
         <a href="../photo">Photography</a>
         <a href="../reflections">Reflections</a>
         <a href="../archive">Archive</a>
       </span>
-    </div>
+    </nav>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PROJECT HEADER -->
       <div id="project-header">
-          <!-- 
-            TODO
-
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
         <div class="main-title">ZedBoard FPGA Projects</div>
-        <div class="body-text">Created and synthesized various projects on the ZedBoard and Xilinx Zynq FPGA.</div>
+        <div class="body-text">
+          Created and synthesized various projects on the ZedBoard and Xilinx
+          Zynq FPGA.
+        </div>
         <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
-
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
       <div id="project-details">
         <div class="subheader-text">details</div>
         <div class="project-details-content">
           <div class="body-text">
-            As part of Iowa State's CPRE 4880 course, Embedded Systems Design, we completed various projects using the
-            ZedBoard, a development kit that uses the AMD Xilinx Zynq-7000 chip. These projects ranged from implementing
-            a Nintendo Entertainment System emulation to remotely controlling a quadcopter drone. We designed the 
-            hardware components of each project using the Vivado Design Suite, and we wrote embedded application code in
-            C using Vitis.
-            <br><br>
-            <b>Languages:</b> C, VHDL, MATLAB<br>
-            <b>Tools:</b> Vivado Design Suite, Vitis SDK, Linux<br>
+            As part of Iowa State's CPRE 4880 course, Embedded Systems Design,
+            we completed various projects using the ZedBoard, a development kit
+            that uses the AMD Xilinx Zynq-7000 chip. These projects ranged from
+            implementing a Nintendo Entertainment System emulation to remotely
+            controlling a quadcopter drone. We designed the hardware components
+            of each project using the Vivado Design Suite, and we wrote embedded
+            application code in C using Vitis.
+            <br /><br />
+            <b>Languages:</b> C, VHDL, MATLAB<br />
+            <b>Tools:</b> Vivado Design Suite, Vitis SDK, Linux<br />
             <b>Technologies:</b> Avnet ZedBoard, AMD Xilinx Zynq-7000 SoC
           </div>
         </div>
@@ -87,50 +82,26 @@
 
       <!-- IMAGE GALLERY -->
       <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
         <!-- <div class="subheader-text">gallery</div> -->
         <div class="project-gallery-content">
-            <!-- 
-              TODO
-
-              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-              Full Width Image:
-
-                <div class="gallery-image-container">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              Half Width Image: 
-
-                <div class="gallery-image-container half-width">
-                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-                  <span class="image-caption">IMAGE_CAPTION</span>
-                </div>
-
-              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-                  - IMAGE_NAME: the name of the image file in assets/images
-                  - IMAGE_CAPTION: to the caption of the image
-            -->
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/nes.jpg" class="gallery-image">
-              <span class="image-caption-center">NES Emulation</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/quadcopter.jpg" class="gallery-image">
-              <span class="image-caption-center">Quad UAV Interfacing</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/fpga_camera.jpg" class="gallery-image">
-              <span class="image-caption-center">Digital Camera</span>
-            </div>
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/nes.jpg" class="gallery-image" />
+            <span class="image-caption-center">NES Emulation</span>
+          </div>
+          <div class="gallery-image-container half-width">
+            <img src="../assets/images/quadcopter.jpg" class="gallery-image" />
+            <span class="image-caption-center">Quad UAV Interfacing</span>
+          </div>
+          <div class="gallery-image-container">
+            <img src="../assets/images/fpga_camera.jpg" class="gallery-image" />
+            <span class="image-caption-center">Digital Camera</span>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- FOOTER -->
-    <div id="footer" class="foot">
+    <footer id="footer" class="foot">
       <a href="mailto:ktjw16@gmail.com"
         >Email
         <span class="external-link">
@@ -191,6 +162,6 @@
             </g></svg></span
       ></a>
       <span id="copyright">&copy; 2024 Katie Wolf</span>
-    </div>
+    </footer>
   </body>
 </html>

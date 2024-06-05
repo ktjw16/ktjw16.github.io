@@ -16,173 +16,148 @@
   </head>
   <body>
     <div id="overlay-nav">
-      <a href="javascript:void(0)" class="closebtn" onclick="toggleNavOverlay()">&times;</a>
+      <a href="javascript:void(0)" class="closebtn" onclick="toggleNavOverlay()"
+        >&times;</a
+      >
     </div>
-    <div id="sidenav" class="nav">
+    <nav id="sidenav" class="nav">
       <span class="nav-title"><a href="../">Katie Wolf</a></span>
-      <br/><a href="../info">Info</a>
-      <a href="../Katie_Wolf_Resume.pdf">Resume</a><br/>
+      <br /><a href="../info">Info</a>
+      <a href="../Katie_Wolf_Resume.pdf">Resume</a><br />
       <span class="nav-header">Experience</span>
       <span class="nav-sublinks">
         <a href="../isu">Iowa State University</a>
         <a href=".">Oracle Corporation</a>
-        <a href="../collins">Collins Aerospace</a></span>
-        <br/>
+        <a href="../collins">Collins Aerospace</a></span
+      >
+      <br />
       <span class="nav-header">Projects</span>
       <span class="nav-sublinks">
         <a href="../asic">Digital ASIC Fabrication</a>
         <a href="../fpga">Embedded Systems Design</a>
         <a href="../mips">VHDL MIPS Processor</a>
         <a href="../songshare">SongShare Android App</a>
-        <a href="../roomba">Embedded Roomba Control</a></span>
-        <br/>
+        <a href="../roomba">Embedded Roomba Control</a></span
+      >
+      <br />
       <span class="nav-header">Et Cetera</span>
       <span class="nav-sublinks">
         <a href="../photo">Photography</a>
         <a href="../reflections">Reflections</a>
         <a href="../archive">Archive</a>
       </span>
-    </div>
+    </nav>
 
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PROJECT HEADER -->
       <div id="project-header">
-          <!-- 
-            TODO
-
-            - Change the 'main-title' text to the name of your project
-            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
-            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
-          -->
-        <div class="main-title">Oracle Corporation:<br>Software Engineer Intern</div>
+        <div class="main-title">
+          Oracle Corporation:<br />Software Engineer Intern
+        </div>
         <div class="body-text">
-          May 2023 — August 2023<br>
+          May 2023 — August 2023<br />
           Santa Clara, California
         </div>
         <!-- <image class="project-header-image" src="../assets/images/oracle.jpg"> -->
       </div>
 
       <!-- PROJECT DETAILS -->
-      <!-- 
-        TODO
-
-        - Change the 'subheader-text' to whatever header you want for project details
-        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
-      -->
       <div id="project-details">
         <!-- <div class="subheader-text">Project Details / Background</div> -->
         <div class="project-details-content">
           <div class="body-text">
-            Over the summer of 2023, I worked as a Software Engineer Intern for the Oracle Hardware Development team, under
-            Oracle's Corporate Architecture business unit. In this position, I developed Python scripts that used in-house tools
-            to run static code analysis on the department's codebase. The scripts achieved full codebase coverage across two different
-            product platforms, and I also designed utility scripts to parse and analyze the static code analysis output reports.
-            I integrated all of these automation scripts into the department's nightly build process, streamlining the workflow
-            for over 150 engineers.
+            Over the summer of 2023, I worked as a Software Engineer Intern for
+            the Oracle Hardware Development team, under Oracle's Corporate
+            Architecture business unit. In this position, I developed Python
+            scripts that used in-house tools to run static code analysis on the
+            department's codebase. The scripts achieved full codebase coverage
+            across two different product platforms, and I also designed utility
+            scripts to parse and analyze the static code analysis output
+            reports. I integrated all of these automation scripts into the
+            department's nightly build process, streamlining the workflow for
+            over 150 engineers.
           </div>
         </div>
       </div>
 
-  <!-- IMAGE GALLERY -->
-  <div id="project-gallery">
-    <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-    <!-- <div class="subheader-text">gallery</div> -->
-    <div class="project-gallery-content">
-        <!-- 
-          TODO
-
-          This is where the images in the gallery live. Here's a simple gallery image for you to copy:
-
-          Full Width Image:
-
-            <div class="gallery-image-container">
-              <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-              <span class="image-caption">IMAGE_CAPTION</span>
-            </div>
-
-          Half Width Image: 
-
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/IMAGE_NAME" class="gallery-image">
-              <span class="image-caption">IMAGE_CAPTION</span>
-            </div>
-
-          - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
-              - IMAGE_NAME: the name of the image file in assets/images
-              - IMAGE_CAPTION: to the caption of the image
-        -->
-        <div class="gallery-image-container">
-          <img src="../assets/images/oracle_interns.jpg" class="gallery-image">
-          <!-- <span class="image-caption">MP-2: Digital Camera</span> -->
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- <div class="subheader-text">gallery</div> -->
+        <div class="project-gallery-content">
+          <div class="gallery-image-container">
+            <img
+              src="../assets/images/oracle_interns.jpg"
+              class="gallery-image"
+            />
+            <!-- <span class="image-caption">MP-2: Digital Camera</span> -->
+          </div>
         </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!-- FOOTER -->
-<div id="footer" class="foot">
-  <a href="mailto:ktjw16@gmail.com"
-    >Email
-    <span class="external-link">
-      <svg
-        class="external-link-svg"
-        width="12"
-        height="12"
-        viewBox="0 0 27 27"
-      >
-        <g
-          fill="none"
-          fill-rule="evenodd"
-          stroke-width="3.04"
-          transform="rotate(45 16.036 18.086)"
-        >
-          <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
-          <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
-        </g></svg></span
-  ></a>
+    <!-- FOOTER -->
+    <footer id="footer" class="foot">
+      <a href="mailto:ktjw16@gmail.com"
+        >Email
+        <span class="external-link">
+          <svg
+            class="external-link-svg"
+            width="12"
+            height="12"
+            viewBox="0 0 27 27"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke-width="3.04"
+              transform="rotate(45 16.036 18.086)"
+            >
+              <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+              <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+            </g></svg></span
+      ></a>
 
-  <a href="https://www.linkedin.com/in/katiejwolf/"
-    >LinkedIn
-    <span class="external-link">
-      <svg
-        class="external-link-svg"
-        width="12"
-        height="12"
-        viewBox="0 0 27 27"
-      >
-        <g
-          fill="none"
-          fill-rule="evenodd"
-          stroke-width="3.04"
-          transform="rotate(45 16.036 18.086)"
-        >
-          <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
-          <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
-        </g></svg></span
-  ></a>
+      <a href="https://www.linkedin.com/in/katiejwolf/"
+        >LinkedIn
+        <span class="external-link">
+          <svg
+            class="external-link-svg"
+            width="12"
+            height="12"
+            viewBox="0 0 27 27"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke-width="3.04"
+              transform="rotate(45 16.036 18.086)"
+            >
+              <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+              <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+            </g></svg></span
+      ></a>
 
-  <a href="https://github.com/ktjw16"
-    >GitHub
-    <span class="external-link">
-      <svg
-        class="external-link-svg"
-        width="12"
-        height="12"
-        viewBox="0 0 27 27"
-      >
-        <g
-          fill="none"
-          fill-rule="evenodd"
-          stroke-width="3.04"
-          transform="rotate(45 16.036 18.086)"
-        >
-          <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
-          <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
-        </g></svg></span
-  ></a>
-  <span id="copyright">&copy; 2024 Katie Wolf</span>
-</div>
-</body>
+      <a href="https://github.com/ktjw16"
+        >GitHub
+        <span class="external-link">
+          <svg
+            class="external-link-svg"
+            width="12"
+            height="12"
+            viewBox="0 0 27 27"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke-width="3.04"
+              transform="rotate(45 16.036 18.086)"
+            >
+              <polyline points="0 11.647 10.965 .682 22 11.717"></polyline>
+              <path d="M10.9240122,0.607902736 L10.9240122,33.064978"></path>
+            </g></svg></span
+      ></a>
+      <span id="copyright">&copy; 2024 Katie Wolf</span>
+    </footer>
+  </body>
 </html>
